@@ -23,4 +23,12 @@ body {
     width: calc(100% / 10);
     height: calc(100% / 10);
     border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.selected {
+    background-color: peru;
+    border: 1 px solid black;
 }
