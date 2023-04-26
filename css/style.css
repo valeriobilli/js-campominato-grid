@@ -31,4 +31,5 @@ body {
 .selected {
     background-color: peru;
     border: 1 px solid black;
+    cursor: pointer;
 }
