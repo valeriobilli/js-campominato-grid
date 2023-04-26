@@ -10,11 +10,14 @@ const start = document.getElementById("start");
 
 start.addEventListener("click", addSquares);
 
+newSquare.addEventListener("click", function(){
+    newSquare.classList.toggle("selected")
+})
 
 // funzione per generare i quadrati
 function addSquares() {
     for (let i = 0; i < 100; i++) {
-        var newSquare = document.createElement("div");
+        const newSquare = document.createElement("div");
         newSquare.classList.add("square100");
         grid.appendChild(newSquare);
         newSquare.innerHTML = i+1; 
