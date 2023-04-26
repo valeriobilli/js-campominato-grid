@@ -10,11 +10,6 @@ const start = document.getElementById("start");
 
 start.addEventListener("click", addSquares);
 
-// funzione per selezionare casella
-
-newSquare.addEventListener("click", function(){
-    newSquare.classList.toggle("selected")
-})
 
 // funzione per generare i quadrati
 function addSquares() {
@@ -23,10 +18,15 @@ function addSquares() {
         newSquare.classList.add("square100");
         grid.appendChild(newSquare);
         newSquare.innerHTML = i+1; 
+
+        // funzione per selezionare casella
+        newSquare.addEventListener("click", function(){
+            newSquare.classList.toggle("selected")
+        })
+       
     }
 }
 
-// funzione per selezionare i quadrati
 
 
 
