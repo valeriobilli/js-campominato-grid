@@ -10,6 +10,8 @@ const start = document.getElementById("start");
 
 start.addEventListener("click", addSquares);
 
+// funzione per selezionare casella
+
 newSquare.addEventListener("click", function(){
     newSquare.classList.toggle("selected")
 })
