@@ -4,7 +4,7 @@ play.addEventListener("click", startGame);
 
 var startGame = false;
 
-// funzione per generare i quadrati
+// funzione per generare le caselle in pagina
 function startGame() {
     if (startGame == false) {
         let nOfCell = document.getElementById("level").value;
@@ -20,6 +20,7 @@ function startGame() {
         grid.appendChild(newSquare);
         newSquare.innerHTML = i+1; 
 
+        // funzione per colorare le caselle selezionate
         newSquare.addEventListener("click", function(){
             this.classList.toggle("selected")
             console.log("Hai selezionato la casella numero", i+1)
@@ -38,17 +39,7 @@ function startGame() {
 let restart = document.getElementById("restartBtn");
 restart.addEventListener("click", refresh);
 
-
+// funnzione per refreshare e cominiciare una nuova partita
 function refresh(){
     window.location.reload("Refresh")
   }
-
-        
-
-
-
-
-
-
-
-

@@ -54,31 +54,11 @@ header button {
 }
 
 .square {
-    /* width: calc(100% / 10);
-    height: calc(100% / 10); */
     border: 1px solid white;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-/* .square81 {
-    width: calc(100% / 9);
-    height: calc(100% / 9);
-    border: 1px solid white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.square49 {
-    width: calc(100% / 7);
-    height: calc(100% / 7);
-    border: 1px solid white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
 
 .selected {
     background-color: peru;
